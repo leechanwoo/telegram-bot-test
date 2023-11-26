@@ -1,0 +1,18 @@
+
+version: "3"
+
+services:
+  haskell: 
+    image: telegram-bot:haskell-local
+    volumes: 
+      - ./:/home
+
+    working_dir: /home
+    
+    build:
+      dockerfile: ./dockerfiles/haskell.Dockerfile
+
+
+
+
+  
